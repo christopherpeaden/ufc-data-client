@@ -1,0 +1,38 @@
+<div *ngIf="fighter">
+  <h2>{{fighter.first_name}} {{fighter.last_name}} details!</h2>
+
+  <div><label>ID: </label>{{fighter.id}}</div>
+
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="fighter.first_name" placeholder="name"/>
+    <input [(ngModel)]="fighter.last_name" placeholder="name"/>
+  </div>
+  <div>
+    <label>Nickname: </label>
+    <input [(ngModel)]="fighter.nickname" placeholder="nickname"/>
+  </div>
+  <div>
+    <label>Weight Class: </label>
+    <input [(ngModel)]="fighter.weight_class" placeholder="name"/>
+  </div>
+  <div>
+    <label>Title Holder: </label>
+    <input [(ngModel)]="fighter.title_holder" placeholder="name"/>
+  </div>
+  <div>
+    <label>Wins: </label>
+    <input [(ngModel)]="fighter.wins" placeholder="name"/>
+  </div>
+  <div>
+    <label>Losses: </label>
+    <input [(ngModel)]="fighter.losses" placeholder="name"/>
+  </div>
+  <div>
+    <label>Draws: </label>
+    <input [(ngModel)]="fighter.draws" placeholder="name"/>
+  </div>
+</div>
+
+<button (click)="save()">Save</button>
+<button (click)="goBack()">Back</button>

@@ -1,0 +1,8 @@
+<h2>Title Holders</h2>
+<div class="grid grid-pad">
+    <div *ngFor="let titleHolder of titleHolders" (click)="gotoDetail(titleHolder)" class="col-1-3">
+      <div class="module titleHolder">
+        <h4>{{titleHolder.first_name}} {{titleHolder.last_name}}</h4>
+      </div>
+    </div>
+</div>

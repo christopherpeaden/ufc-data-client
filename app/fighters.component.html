@@ -1,0 +1,22 @@
+<div>
+  <h2>Fighters</h2>
+  <ul class="fighters">
+    <li *ngFor="let fighter of fighters"
+      (click)="onSelect(fighter)"
+      [class.selected]="fighter === selectedFighter">
+        {{fighter.first_name}} {{fighter.last_name}}
+      <button class="delete-button" (click)="deleteFighter(fighter, $event)">Delete</button>
+    </li>
+  </ul>
+  <div class="error" *ngIf="error">{{error}}</div>
+  <button (click)="addFighter()">Add New Hero</button>
+  <div *ngIf="addingFighter">
+    <fighter-detail (close)="close($event)"></fighter-detail>
+  </div>
+</div>
+<div *ngIf="selectedFighter">
+  <h2>
+    {{selectedFighter.first_name}} {{selectedFighter.last_name}} is my fighter 
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
