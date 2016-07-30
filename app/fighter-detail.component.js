@@ -24,6 +24,7 @@ var FighterDetailComponent = (function () {
         this.sub = this.route.params.subscribe(function (params) {
             if (params['id'] !== undefined) {
                 var id = +params['id'];
+                _this.navigated = true;
                 _this.fighterService.getFighter(id)
                     .then(function (fighter) { return _this.fighter = fighter; });
             }

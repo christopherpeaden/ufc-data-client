@@ -11,7 +11,7 @@ import { Http } from '@angular/http';
   directives: [FighterDetailComponent]
 })
 
-export class FightersComponent {
+export class FightersComponent implements OnInit {
   fighters: Array<Fighter>;
   error: any;
   selectedFighter: Fighter;

@@ -57,7 +57,6 @@ export class FighterService {
       .catch(this.handleError);
   }
 
-
   save(fighter: Fighter): Promise<Fighter>  {
     if (fighter.id) {
       return this.put(fighter);

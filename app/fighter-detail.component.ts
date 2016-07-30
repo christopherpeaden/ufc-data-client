@@ -25,6 +25,7 @@ export class FighterDetailComponent implements OnInit, OnDestroy  {
     this.sub = this.route.params.subscribe(params => {
       if (params['id'] !== undefined) {
         let id = +params['id'];
+        this.navigated = true;
         this.fighterService.getFighter(id)
           .then(fighter => this.fighter = fighter);
       }  else {
