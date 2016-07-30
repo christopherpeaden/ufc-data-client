@@ -3,6 +3,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { FighterService } from './fighter.service'
 import { TitleHolderService } from './title-holder.service'
+import './rxjs-extensions';
 
 @Component({
   selector: 'ufc-statistics',

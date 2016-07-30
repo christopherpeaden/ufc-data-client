@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var fighter_service_1 = require('./fighter.service');
 var title_holder_service_1 = require('./title-holder.service');
+require('./rxjs-extensions');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Fighters';

@@ -4,11 +4,13 @@ import { Http } from '@angular/http';
 import { FighterService } from './fighter.service';
 import { Router } from '@angular/router';
 import { TitleHolderService } from './title-holder.service';
+import { FighterSearchComponent } from './fighter-search.component';
 
 
 @Component({
   templateUrl: 'app/title-holders.component.html',
-  styleUrls: ['app/title-holders.component.css']
+  styleUrls: ['app/title-holders.component.css'],
+  directives: [FighterSearchComponent]
 })
 
 export class TitleHoldersComponent {

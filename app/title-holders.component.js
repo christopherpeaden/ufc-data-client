@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var title_holder_service_1 = require('./title-holder.service');
+var fighter_search_component_1 = require('./fighter-search.component');
 var TitleHoldersComponent = (function () {
     function TitleHoldersComponent(titleHolderService, router) {
         this.titleHolderService = titleHolderService;
@@ -31,7 +32,8 @@ var TitleHoldersComponent = (function () {
     TitleHoldersComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/title-holders.component.html',
-            styleUrls: ['app/title-holders.component.css']
+            styleUrls: ['app/title-holders.component.css'],
+            directives: [fighter_search_component_1.FighterSearchComponent]
         }), 
         __metadata('design:paramtypes', [title_holder_service_1.TitleHolderService, router_1.Router])
     ], TitleHoldersComponent);
