@@ -10,8 +10,8 @@ export class FighterSearchService {
 
   search(term: string) {
     return this.http
-               .get(`http://localhost:3001/fighters?name=${term}+`)
-               .map((r: Response) => r.json().data as Fighter[]);
+               .get(`http://localhost:3001/fighters?name=${term}`)
+               .map((r: Response) => r.json() as Fighter[]);
   }
 }
 
