@@ -16,7 +16,7 @@ var FighterSearchService = (function () {
     }
     FighterSearchService.prototype.search = function (term) {
         return this.http
-            .get("http://localhost:3001/fighters?name=" + term)
+            .get("http://protected-fjord-16041.herokuapp.com/fighters?name=" + term)
             .map(function (r) { return r.json(); });
     };
     FighterSearchService = __decorate([

@@ -6,7 +6,7 @@ import 'rxjs/Rx';
 
 @Injectable()
 export class FighterService {
-  private fightersUrl = 'http://localhost:3001/fighters';
+  private fightersUrl = 'http://protected-fjord-16041.herokuapp.com/fighters';
   constructor(private http: Http) { }
 
   getFighters() { 

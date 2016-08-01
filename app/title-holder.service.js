@@ -13,7 +13,7 @@ var core_1 = require('@angular/core');
 var TitleHolderService = (function () {
     function TitleHolderService(http) {
         this.http = http;
-        this.titleHoldersUrl = 'http://localhost:3001/fighters/title_holders';
+        this.titleHoldersUrl = 'http://protected-fjord-16041.herokuapp.com/fighters/title_holders';
     }
     TitleHolderService.prototype.getTitleHolders = function () {
         return this.http.get(this.titleHoldersUrl)

@@ -14,7 +14,7 @@ require('rxjs/Rx');
 var FighterService = (function () {
     function FighterService(http) {
         this.http = http;
-        this.fightersUrl = 'http://localhost:3001/fighters';
+        this.fightersUrl = 'http://protected-fjord-16041.herokuapp.com/fighters';
     }
     FighterService.prototype.getFighters = function () {
         return this.http.get(this.fightersUrl)

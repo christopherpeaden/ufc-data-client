@@ -3,7 +3,7 @@ import { Injectable }    from '@angular/core';
 
 @Injectable()
 export class TitleHolderService {
-private titleHoldersUrl = 'http://localhost:3001/fighters/title_holders';
+private titleHoldersUrl = 'http://protected-fjord-16041.herokuapp.com/fighters/title_holders';
   constructor(private http: Http) { }
 
   getTitleHolders() {
